@@ -33,6 +33,12 @@ If you are deploying on a host with Passenger you restart the application by
 doing:
 
     touch tmp/restart.txt
+    
+Please note that the [Prawn][p] gem requires Ruby 1.9.3 or better. If you are still on 1.8.7 and are unable to upgrade (for example, if you are using shared hosting) you will need to downgrade Prawn down to version 0.8.4. To do so edit the `Gemfile` and change the prawn entry to:
+
+    gem 'prawn', '~> 0.8.4'
+    
+You can leave all the other dependencies the same. The 0.8.4 version of the gem has all the necessary functionality to run this tool and has been confirmed to be fairly stable in production.
 
 Dependencies
 ------------
