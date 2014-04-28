@@ -1,9 +1,14 @@
 PDF Movement Tray
 =================
 
-This is a web based version of the [Movement Tray][m] tool.
+This is a web based version of the [Movement Tray][m] tool. The aim of this 
+project is to provide an easy to use web interface to the command line tool.
 
-It generates a printable movement tray for war games which
+The web interface will look like this:
+
+![Web Interface](http://i.imgur.com/irRaWFr.png)
+
+The command line tool generates a printable movement tray for war games which
 use 20 or 25mm square bases. A good example of such system is
 Warhammer Fantasy Battles which uses 20mm and 25mm bases for most of
 the infantry models.
@@ -23,6 +28,11 @@ required gems do:
 The front end dependencies are managed via [Bower][t]. To install do:
 
     bower install
+
+If you are deploying on a host with Passenger you restart the application by
+doing:
+
+    touch tmp/restart.txt
 
 Dependencies
 ------------
