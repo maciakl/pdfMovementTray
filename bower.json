@@ -1,0 +1,22 @@
+{
+  "name": "PDFMovementTray",
+  "version": "0.0.0",
+  "authors": [
+    "Luke Maciak <luke@maciak.net>"
+  ],
+  "license": "MIT",
+  "homepage": "http://pdfMovementTray.com",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.1.1",
+    "jquery-zeroclipboard": "~1.0.0"
+  }
+}

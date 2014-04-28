@@ -1,0 +1,140 @@
+ <!DOCTYPE html>
+ <html lang="en">
+   <head>
+     <meta charset="utf-8"/>
+     <title>title</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+     <meta name="description" content="description"/>
+     <meta name="author" content="author"/>
+
+     <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"/>
+     <style type="text/css">
+         body {
+             padding-top: 60px;
+             padding-bottom: 40px;
+         }
+
+         #dimensions { display: none; }
+         .info { display: none; }
+
+         header>h1 {
+           font-weight: 900;
+         }
+     </style>
+
+     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+     <!--[if lt IE 9]>
+       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+     <![endif]-->
+
+     <link rel="shortcut icon" href="favicon.png"/>
+   </head>
+
+   <body>
+
+
+     <div class="container">
+       <header>
+         <h1>PDF Movement Tray <small>.com</small></h1>
+         <p>Generate paper movement trays for Games Workshop
+         <cite>Warhammer Fantasy Battles</cite> in PDF format.</p>
+         <hr/>
+       </header>
+
+       <%= yield %>
+
+       <footer>
+         <br/><br/>
+         <hr/>
+         <p class="pull-right">
+           &copy;
+           <a href="http://maciak.net">
+             Luke Maciak
+           </a>
+         </p>
+       </footer>
+     </div> 
+
+     <!-- JavaScript Stuff
+     ================================================== -->
+     <!-- Placed at the end of the document so the pages load faster -->
+     <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+     <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+     <script src="/bower_components/zeroclipboard/ZeroClipboard.min.js"></script>
+     <script src="/bower_components/jquery-zeroclipboard/jquery-zeroclipboard.js"></script>
+     
+     <!-- Add your custom scripts here -->
+     <script>
+        $( document ).ready(function() {
+
+            $('#share').tooltip();
+
+            $.zeroclipboard({
+                moviePath: '/bower_components/zeroclipboard/ZeroClipboard.swf',
+                activeClass: 'active',
+                hoverClass: 'hover'
+            });
+
+               $('#share-button').zeroclipboard({
+                dataRequested: function (event, setText) {
+                  setText($('#share').val());
+                },
+                complete: function () {
+                }
+              });
+
+
+            $("#base").change(function(){
+
+              $("#dimensions").fadeOut();
+              $(".info").hide();
+
+              $("#rows option").remove();
+              $("#cols option").remove();
+
+              switch($(this).val())
+              {
+                  case "standard": 
+                    r_max = 10;
+                    c_max = 10;
+                    $("#standard-base").fadeIn();
+                    break;
+
+                  case "large":
+                    r_max = 8;
+                    c_max = 8;
+                    $("#large-base").fadeIn();
+                    break;
+
+                  case "monster":
+                    r_max = 4;
+                    c_max = 4;
+                    $("#monster-base").fadeIn();
+                    break;
+
+                  case "cavalry":
+                    r_max = 4;
+                    c_max = 7;
+                    $("#cavalry-base").fadeIn();
+                    break;
+                  default:
+                    r_max = 4;
+                    c_max = 4;
+                    alert("Unknown base type");
+                    throw("Unknow base type");
+                    break;
+              }
+            
+              for(i=1; i<=r_max; i++)
+                $("#rows").append("<option>"+i+"</option>");
+
+              for(i=1; i<=c_max; i++)
+                $("#cols").append("<option>"+i+"</option>");
+
+              $("#dimensions").fadeIn();
+            });
+        });
+     </script>
+
+   </body>
+ </html>

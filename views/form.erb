@@ -1,0 +1,74 @@
+<div class="row">
+
+  <div class="col-md-4">
+
+    <h2>Generate a Movement Tray</h2>
+
+    <form role="form" method="post">
+      <div class="form-group">
+        <label for="base">Choose the base size:</label>
+        <select name="base" id="base" class="form-control" required="true">
+          <option value="" selected disabled>Make a Selection</option>
+          <option value="standard">Standard (20x20mm)</option>
+          <option value="large">Large (25x25mm)</option>
+          <option value="monster">Monster (40x40mm)</option>
+          <option value="cavalry">Cavalry (25x50mm)</option>
+        </select>
+      </div>
+
+      <div class="form-group" id="dimensions">
+        <label for="rows">Number of ranks in the unit:</label>
+        <select name="rows" id="rows" class="form-control">
+          <option value="" selected disabled>Number of Ranks</option>
+        </select>
+        <label for="cols">Number of models per rank:</label>
+        <select name="cols" id="cols" class="form-control">
+          <option value="" selected disabled>Models per Rank</option>
+        </select>
+      </div>
+
+      <input type="submit" value="Genetate Tray" class="btn btn-primary" />
+      <a href="/" class="btn btn-default">Start Over</a>
+    </form>
+
+  </div>
+
+  <div class="col-md-8">
+
+    <div id="standard-base" class="info text-center">
+      <h2>Standard Base <small>( 20x20mm )</small></h2>
+
+      <p>This is the most common base size in the game, used by all human sized models.</p>
+
+      <img src="/img/standard.jpg" alt="Model with a 20x20mm base"/>
+    </div>
+
+    <div id="large-base" class="info text-center">
+      <h2>Large Base <small>( 25x25mm )</h2>
+
+      <p>This base size is used by larger than human creatures like Orcs and Beastmen.</p>
+
+      <img src="/img/large.jpg" alt="Model with a 25x25mm base"/>
+    </div>
+
+    <div id="monster-base" class="info text-center">
+      <h2>Monster Base ( 25x25mm )</h2>
+
+      <p>This base size is used by large monsters and monstrous infantry like Ogres.</p>
+
+      <img src="/img/monster.jpg" alt="Model with a 40x40mm base"/>
+    </div>
+
+    <div id="cavalry-base" class="info text-center">
+      <h2>Cavalry Base ( 25x50mm )</h2>
+
+      <p>These rectangular bases are used by all mounted cavalry models.</p>
+
+      <img src="/img/cavalry.jpg" alt="Model with a 25x50mm base"/>
+    </div>
+
+  </div>
+
+</div>
+
+

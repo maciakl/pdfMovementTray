@@ -1,0 +1,45 @@
+<div class="row">
+
+  <div class="col-md-4">
+
+    <h2>Movement Tray Download</h2>
+
+    <p>Your movement tray is ready:</p>
+
+    <p>
+    <a href="<%= @filename %>" class="btn btn-lg btn-primary">
+      <i class="glyphicon glyphicon-cloud-download"></i> Download PDF</a>
+    </p>
+
+    <br/><br/>
+
+    <p>Share the link to this movement tray with your friends:</p>
+
+    <div class="input-group">
+      <input type="text" class="form-control" id="share"
+          data-toggle="tooltip" data-placement="top" 
+          title="Click on the paperclip button to automatically copy the link
+            to clipboard."
+        value="http://pdfMovementTray.com<%= @filename %>">
+
+      <span class="input-group-btn">
+        <button class="btn btn-default" type="button" id="share-button" >
+          <i class="glyphicon glyphicon-paperclip"></i></button>
+      </span>
+    </div>
+    
+    <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://pdfMovementTray.com/<%= @filename %>" data-text="I just generated this movement tray with pdfMovementTray.com" data-count="none">Tweet</a>
+    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+
+    <script type="text/javascript" src="https://apis.google.com/js/platform.js"></script>
+<div class="g-plus" data-action="share" data-annotation="none" data-href="http://pdfMovementTray.com<%= @filename %>"></div>
+
+    <br/><br/>
+    <p>
+    <a href="/" class="btn btn-default">
+      <i class="glyphicon glyphicon-refresh"></i> New Movement Tray</a>
+    </p>
+
+  </div>
+
+</div>
