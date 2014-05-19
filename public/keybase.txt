@@ -1,0 +1,71 @@
+==================================================================
+https://keybase.io/lukemaciak
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://pdfmovementtray.com
+  * I am lukemaciak (https://keybase.io/lukemaciak) on keybase.
+  * I have a public key with fingerprint A314 5C5C 6FC4 6268 8800  5023 D174 4A63 8129 BDAA
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "a3145c5c6fc4626888005023d1744a638129bdaa",
+            "host": "keybase.io",
+            "key_id": "d1744a638129bdaa",
+            "uid": "7b0b1bed7ceda600d5f6eb295feb3d00",
+            "username": "lukemaciak"
+        },
+        "service": {
+            "hostname": "pdfmovementtray.com",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1400540396,
+    "expire_in": 157680000,
+    "prev": "c071e6110eb30e726e5cfd97dd3bc0acb62cbf2c8fe1d4b49db650cacd564cb1",
+    "seqno": 20,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.15
+Comment: https://keybase.io/crypto
+
+yMMIAnicbZF/TBvlH8fLKGZ2oEyGU5Z9Z2+YsaRr7q73o21mNNOBunQ0UUCxs9w9
+91w5oXfleoUWhsAX4wzqpE5GYDgxZp2sDmOGbg671E5YxqYCBTZA0WUwJ2Mh2YaZ
+MmVXMv/zr8u9n9f79cnneb5LS9bokoaU50HD5siRpHPRRZ/mhep35moQVuICiLUG
+KYPLH14QXVD2yIKoIFaEMWEECUhA8YCgcMpsNqMoieImDqMJgqFMZgy3sBzDIAak
+VPImGqqGZbzQKEhqpv44BU5N/4P3LR/QLMpiLORoADmGQlGO5CnI4haSh6yJQ9EE
+6IWyyLihSpf7yqCbAQJThtQaEDWvFICa1ywPv8d4ON4tVUI3FBVFZgJGILlViUeW
+FAlI5SpQqigea6KvBDyJQhVknfdUTlYQOfUC1EIllL2CJCJWTCWBIiTcGKFuT6Am
+C2VAoN8jyNApJAiSptR7QdHEGFipKgFKY5DCMFRdAoU0TkES8JyF5jgTC1AGsBQO
+WB4HZh5iHMESFo6lSBQwgCMpArCYOt8LK0QJseKqVGFcqtMruERG8ckQqY1969Bq
+knSa+1JWJN5Qo7s//d+XjSPpmkF7e+eFTzs+DM6U7z80jyn7M4bmZ1NCjju+d12F
+B7Y11fB53Y4PrlP++JXzYucv7X23502NptwMx2LzjrgttnV2Ve9Dykgns48I91bm
+Xw5XTVqV4PDUdP+Kmus/L9Gnju8725b8Wtf4ACNN1N3s0f7ulBfXZHY01e8+P71n
+V33m1Nrs/43eNAY+HqK3ZBAYNlys63sxd7LJ2/36D99vrB3rKnoF/Wqs9c/chXx6
+cqIkMpVd9MxM1/oD/EsVK8eT81NT7AO3NoVPj5/YuoC9ud0HtO9dG7vmWuqMncBG
+Gnr8t1sar3702VOltv6iOr3dXyQheGnJ2uPe2T323IzTF6u7Tzr1yfqe0VdrDejb
+vL1LE80tCDz4Y8lSWusxc1aOWb8QfuLqurS/+h2F2SE4N7z31JrGCB4s7jv6zTp3
+cchMPWz42vnrZn2rbS628yfl8fLdnpZHSVtVMEk7lDfTsBgdPvk38oj1C3d+8blj
+V7QD7k2Rxx54X9y4gXtybztyeOezn1w0zjkc/vh6v364YMtg+DkQPPhGpHviy9TC
+WF51vS0eKzC+hXW8/Eedu3mkbVxs+2ewonVX/9G8MWGD/P+ZcY3uzLYjNy5MS7Wu
+0KrMbGJgvqmlvqRi8bfV0bNZ6dtvXEJXR3MihcGDyuHLbNaZ1ENPf77yTs6OW4FL
+o5beULz5LoZSn4w=
+=nvx1
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lukemaciak
+
+==================================================================
