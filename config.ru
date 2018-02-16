@@ -1,2 +1,2 @@
-require "mt"
+require "./mt"
 run Sinatra::Application
